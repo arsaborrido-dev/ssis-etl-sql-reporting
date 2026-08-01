@@ -26,7 +26,7 @@ Watch the tutorial: YouTube Channel - https://www.youtube.com/@CoffeeBreakIn10
 ![WorkflowDiagram](docs/etl_workflow_diagram.png)
 - CSV extraction via SSIS
 - Data staging in SQL Server
-- Business logic implemented in stored procedure
+- Data transformations implemented in stored procedure
 - SSRS report built on stored procedure output
 
 ## Folder Structure
