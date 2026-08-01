@@ -3,7 +3,9 @@
 ## Overview
 This project demonstrates an end-to-end data workflow using SSIS, SQL Server, and SSRS. 
 It extracts raw CSV data, loads it into SQL Server, transforms it using stored procedures, 
-and delivers a clean, validated dataset that the SSRS report use for visualization.
+and delivers a clean, validated dataset that the SSRS report uses for visualization.
+
+The SQL scripts used in this project demonstrates standard ETL transformations including deduplication, validation, exception handling, and dimension maintenance. All logic shown is generic and does not represent any proprietary business rules.
 
 ## Featured in My YouTube Tutorial
 This project is part of a hands-on tutorial published on my YouTube channel, 
@@ -29,13 +31,13 @@ Watch the tutorial: YouTube Channel - https://www.youtube.com/@CoffeeBreakIn10
 
 ## Folder Structure
 
-/src
-	/ssis        --> ETL packages (DTSX)
-	/sql         --> Stored procedures, schema, queries
-	/ssrs        --> Report definition (RDL)
-/data            --> Public or sanitized datasets
-/docs        	 --> diagrams, notes
-/assets      	 --> Screenshots
+- /src
+-	/ssis        --> ETL packages (DTSX)
+-	/sql         --> Stored procedures, schema, queries
+-	/ssrs        --> Report definition (RDL)
+- /data            --> Public or sanitized datasets
+- /docs        	 --> diagrams, notes
+- /assets      	 --> Screenshots
 
 ## Screenshots
 Screenshots are available in `/assets`:
@@ -56,5 +58,7 @@ Screenshots are available in `/assets`:
 6. Update the report datasource to use the shared data source as reference
 
 ## Sanitization Notice
-All connection strings, credentials, and proprietary business logic have been removed.
+All connection strings, credentials, and related info have been removed. 
 Only public or sample data is included.
+This project does not contain any proprietary business logic. All transformations shown are generic ETL patterns.
+
