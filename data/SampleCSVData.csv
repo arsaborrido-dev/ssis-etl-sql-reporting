@@ -1,0 +1,11 @@
+OrderID,OrderDate,CustomerName,Product,Quantity,UnitPrice,Region
+1001,2026-05-01,Company A,Printer Paper,12,4.50,West
+1002,2026-05-01,Company B,Ink Cartridge,10,22.00,East
+1003,2026-05-03,Company C,Monitor,5,180.00,South
+1004,2026-05-04,Company A,Stapler,15,8.75,West
+1005,2026-05-05,Company D,Desk Chair,3,120.00,North
+1006,2026-05-06,Company B,Printer Paper,40,4.25,East
+1007,2026-05-07,Company C,Keyboard,12,3.75,South
+1008,2026-05-08,Company D,Cellphone,20,15.00,North
+1009,2026-05-09,Company A,Monitor,2,175.00,West
+1010,2026-05-10,Company B,Desk Chair,4,115.00,East
