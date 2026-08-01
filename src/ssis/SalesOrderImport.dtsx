@@ -1,38 +1,26 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="7/13/2026 6:35:35 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DEVPC"
   DTS:CreatorName="DEVPC\USER"
-  DTS:DTSID="{8A5382C8-1525-482A-8754-573CD895265A}"
+  DTS:DTSID="{65433938-1ED0-4A1D-BE34-58004A697703}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="17.0.1010.2"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{D95B817F-0354-4A5B-9396-57905C52C4B6}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{184218B1-13A0-4BD7-A6E9-0DF5488E16EA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DEVPC.MyDataBase]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{B45DCE6D-3E6A-4FFD-B1EA-B41A49B1082D}"
-      DTS:ObjectName="DEVPC.MyDataBase">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DEVSERVER;Initial Catalog=MyDataBase;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[FlatFileConnMngr]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{CC8019D4-EFF6-4852-9529-CDD628B9BB49}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:DTSID="{3C969761-7F16-4075-B68A-CBB16C320732}"
+      DTS:ObjectName="FlatFileConnMngr">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -51,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OrderID"
-              DTS:DTSID="{6834DFD9-FD0D-485B-93F8-5E27184631CD}"
+              DTS:DTSID="{AD0EB74C-6F80-49BF-B5AF-2F1FD82D2E7D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -60,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OrderDate"
-              DTS:DTSID="{D07C5312-9CEA-43DE-86B4-8259C0CCF353}"
+              DTS:DTSID="{0393B6FB-CEAA-452C-B9CD-E769045009E6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -69,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerName"
-              DTS:DTSID="{2229AB55-1B23-400E-9CC6-263E6EFA0170}"
+              DTS:DTSID="{3215D8E7-A702-4712-B5DE-BBD251CD7DBF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -78,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Product"
-              DTS:DTSID="{2F893F48-C451-4891-AE78-D120BC1CF64A}"
+              DTS:DTSID="{9D56084F-C33D-42CD-A7B7-66A3D7877092}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Quantity"
-              DTS:DTSID="{FB2FE44B-B782-4C1B-B50D-93CFC8086159}"
+              DTS:DTSID="{A983D400-DA08-4623-875B-CA9EF41CA0ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="UnitPrice"
-              DTS:DTSID="{D83B6BB4-9B6A-4EE4-9C79-3018489EC305}"
+              DTS:DTSID="{AC6A7AA3-47A6-4B63-9E62-030E395643DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,10 +93,22 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Region"
-              DTS:DTSID="{7CBD8C20-CF95-4C0C-A85B-891AFEB5473A}"
+              DTS:DTSID="{D4F08337-FB2B-4E96-89DD-13FE9C4CD80C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OleDbConnMngr]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BE517DEB-0B4B-48E6-AD17-B72F4663B319}"
+      DTS:ObjectName="OleDbConnMngr">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SERVER_NAME;Initial Catalog=DATABASE_NAME;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -118,7 +118,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{BCB5FAD3-C337-4D66-A312-1B6EFF190D9B}"
+      DTS:DTSID="{ABD960E3-391E-456F-A7B6-48402A77E7AD}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -396,8 +396,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[FlatFileConnMngr]"
+                  connectionManagerRefId="Package.ConnectionManagers[FlatFileConnMngr]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -694,8 +694,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DEVPC.MyDataBase]"
-                  connectionManagerRefId="Package.ConnectionManagers[DEVPC.MyDataBase]"
+                  connectionManagerID="Package.ConnectionManagers[OleDbConnMngr]"
+                  connectionManagerRefId="Package.ConnectionManagers[OleDbConnMngr]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -842,7 +842,7 @@
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{7727E481-186D-4473-8744-C120391A826F}"
+      DTS:DTSID="{78DCC2D8-D538-405A-A184-294132AC67A5}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -851,7 +851,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B45DCE6D-3E6A-4FFD-B1EA-B41A49B1082D}"
+          SQLTask:Connection="{BE517DEB-0B4B-48E6-AD17-B72F4663B319}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE tblSalesOrderImport_Staging" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -859,7 +859,7 @@
       DTS:refId="Package\Execute SQL Task 1"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{48FB5A86-6A7C-44D6-BA3C-23F1F0CC8FD7}"
+      DTS:DTSID="{EF138A9C-8197-4C34-8446-72537412E0BB}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 1"
@@ -868,7 +868,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B45DCE6D-3E6A-4FFD-B1EA-B41A49B1082D}"
+          SQLTask:Connection="{BE517DEB-0B4B-48E6-AD17-B72F4663B319}"
           SQLTask:SqlStatementSource="EXEC [dbo].[ssis_SalesOrderImport]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -877,7 +877,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{1148BDCF-4001-401A-A597-06B07901DF2E}"
+      DTS:DTSID="{EE41382B-634E-4D01-9D7F-B06EE5A28DA7}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -885,7 +885,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{55A6BB06-7DA0-40E0-B302-44448BC3C3F5}"
+      DTS:DTSID="{6A83D859-3B51-4E62-B1E2-D828E624FD50}"
       DTS:From="Package\Data Flow Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
