@@ -12,8 +12,8 @@ using SSIS, SQL Server, and SSRS. The video walks through the package design,
 stored procedure logic, and the final SSRS report.
 
 Watch the tutorial: YouTube Channel - https://www.youtube.com/@CoffeeBreakIn10
-	1. https://www.youtube.com/watch?v=BvqN8JHOCIE - ETL to Reporting in 10 Minutes: A Complete SSIS‑to‑SSRS Workflow (SSIS ETL Tutorial | SSRS Tutorial) 
-	2. https://www.youtube.com/watch?v=iFqLE_bPtCQ&t=25s - SSIS Data Transformations: 3 Ways to Clean & Load Data (Part 2 — Stored Procedure) 
+- https://www.youtube.com/watch?v=BvqN8JHOCIE - ETL to Reporting in 10 Minutes: A Complete SSIS‑to‑SSRS Workflow (SSIS ETL Tutorial | SSRS Tutorial) 
+- https://www.youtube.com/watch?v=iFqLE_bPtCQ&t=25s - SSIS Data Transformations: 3 Ways to Clean & Load Data (Part 2 — Stored Procedure) 
 
 ## Technologies
 - SQL Server
@@ -29,13 +29,13 @@ Watch the tutorial: YouTube Channel - https://www.youtube.com/@CoffeeBreakIn10
 
 ## Folder Structure
 
-/src
-    /ssis        -> ETL packages (DTSX)
-    /sql         -> Stored procedures, schema, queries
-    /ssrs        -> Report definition (RDL)
-/data            -> Public or sanitized datasets
-/docs        	 -> diagrams, notes
-/assets      	 -> Screenshots
+- /src
+-	/ssis        -> ETL packages (DTSX)
+-	/sql         -> Stored procedures, schema, queries
+-	/ssrs        -> Report definition (RDL)
+- /data            -> Public or sanitized datasets
+- /docs        	 -> diagrams, notes
+- /assets      	 -> Screenshots
 
 ## Screenshots
 Screenshots are available in `/assets`:
