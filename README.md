@@ -29,13 +29,13 @@ Watch the tutorial: YouTube Channel - https://www.youtube.com/@CoffeeBreakIn10
 
 ## Folder Structure
 
-- /src
--	/ssis        -> ETL packages (DTSX)
--	/sql         -> Stored procedures, schema, queries
--	/ssrs        -> Report definition (RDL)
-- /data            -> Public or sanitized datasets
-- /docs        	 -> diagrams, notes
-- /assets      	 -> Screenshots
+/src
+	/ssis        --> ETL packages (DTSX)
+	/sql         --> Stored procedures, schema, queries
+	/ssrs        --> Report definition (RDL)
+/data            --> Public or sanitized datasets
+/docs        	 --> diagrams, notes
+/assets      	 --> Screenshots
 
 ## Screenshots
 Screenshots are available in `/assets`:
