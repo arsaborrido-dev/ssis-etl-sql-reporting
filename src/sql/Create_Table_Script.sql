@@ -1,4 +1,4 @@
-USE [MyDataBase]
+USE [DATABASE_NAME]
 GO
 
 /****** Object:  Table [dbo].[tblSalesOrderImport_Staging]    Script Date: 8/1/2026 12:37:31 AM ******/
