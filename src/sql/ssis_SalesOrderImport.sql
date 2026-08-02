@@ -1,4 +1,4 @@
-USE [MyDataBase]
+USE [DATABASE_NAME]
 GO
 
 /****** Object:  StoredProcedure [dbo].[ssis_SalesOrderImport]    Script Date: 8/1/2026 12:20:17 AM ******/
