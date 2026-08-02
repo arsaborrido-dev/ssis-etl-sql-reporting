@@ -1,4 +1,4 @@
-USE [MyDataBase]
+USE [DATABASE_NAME]
 GO
 
 /****** Object:  StoredProcedure [dbo].[ssrs_SalesOrderReport]    Script Date: 8/1/2026 12:12:31 AM ******/
