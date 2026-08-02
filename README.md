@@ -30,7 +30,6 @@ Watch the tutorial: YouTube Channel - https://www.youtube.com/@CoffeeBreakIn10
 - SSRS report built on stored procedure output
 
 ## Folder Structure
-
 - /src
 -	/ssis        --> ETL packages (DTSX)
 -	/sql         --> Stored procedures, schema, queries
