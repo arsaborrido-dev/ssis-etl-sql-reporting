@@ -53,9 +53,10 @@ Screenshots are available in `/assets`:
 	-> ssis_Salesorderimport.sql
 	-> ssrs_SalesOrderReport.sql
 4. Import the SSRS report into Visual Studio.
-5. Create shared data source pointing to your SQL Server instance
-6. Update the report datasource to use the shared data source as reference
-
+5. Create shared data source pointing to your SQL Server instance.
+6. Update the report datasource to use the shared data source as reference.
+7. Use the SampleCSVData.csv file located in /data as your dataset.
+      
 ## Sanitization Notice
 All connection strings, credentials, and related info have been removed. 
 Only public or sample data is included.
